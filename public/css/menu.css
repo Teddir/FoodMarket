@@ -1,0 +1,122 @@
+.title {
+    position : absolute;
+    width: 370px;
+    height: 115px;
+    font-family: Roboto Condensed;
+    font-size: 100px;
+  }
+  .garis {
+    width: 1349px;
+    height: 0px;
+    position: absolute;
+    border: 2px solid #000000;
+  }
+  h2{
+    margin-top: 25px;
+    width: 157px;
+    margin: auto;
+    font-family: Roboto Condensed;
+    font-size: 36px;
+    color: black;
+  }       
+  .container-fluid{
+    padding: 0 !important; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+        
+  .container-menu{
+    width: 500px;
+    height : 510px;
+    margin: 0 0 0 0;
+    display: block;
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    }
+    .container-menu2{
+      width: 500px;
+      height : 510px;
+      margin: 0 0 0 0;
+      display: block;
+      background-color: white ;
+      background-repeat: no-repeat;
+      }
+      .container-menu3{
+        width: 500px;
+        height : 510px;
+        margin: 0 0 0 0;
+        display: block;
+        background-color: antiquewhite;
+        background-repeat: no-repeat;
+        }
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  .topping{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+  .isi{
+    margin-top: 95px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+  .subtitle {
+    position: absolute;
+    width: 273px;
+    height: 34px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 21px;
+    color: #000000;
+    }
+  .tambah{
+    display: flex;
+    flex-direction: row;
+  }
+  .bg-image {
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 960px; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  position: relative;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.gambar {
+ zoom : 40%;
+ margin-top: 100px; 
+ position: absolute;
+margin-left: 250px;
+}
