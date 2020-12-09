@@ -4,6 +4,7 @@
     border: none;
     margin: auto;
     margin-top: 60px;
+    margin-left:885px;
 }
 .logoimg{
     width: 90px;
@@ -71,10 +72,10 @@ p{
 a{
     text-decoration: none;
 }
-.container{
+.container-fluid{
     padding : 0;
-    margin :0;
-    height: 87vh; 
+    /* margin :0; */
+    height: 89vh; 
     width :100vw;
     background-position: center;
     background-repeat: no-repeat;

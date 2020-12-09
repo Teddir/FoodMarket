@@ -73,7 +73,7 @@
           </div>
       </div>
       <div style="width: fit-content; margin-right: 50px;" class="button">
-        <a href="{% url 'login:index' %}">
+        <a href="/login/">
           <button id="loginBtn" type="button" class="btn  btn-outline-dark">Login</button>
         </a>
 
