@@ -1,0 +1,60 @@
+.title {
+    position : absolute;
+    width: 370px;
+    height: 115px;
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    left : 760px;    
+    margin-top: -248px;  
+  }
+  .garis {
+    width: 1349px;
+    height: 0px;
+    position: absolute;
+    border: 2px solid #000000;
+  }
+  h2{
+    margin-top: 25px;
+    width: 157px;
+    margin: auto;
+    font-family: Roboto Condensed;
+    font-size: 36px;
+    color: black;
+  }       
+  .container-fluid{
+    padding: 0 !important; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+        
+  .container-menu{
+    width: 850px;
+    margin: auto;
+    display: block;
+    margin-top: 115px;
+  }
+  .topping{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  
+  }
+  .isi{
+    margin-top: 95px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    
+  }
+  .tambah{
+    display: flex;
+    flex-direction: row;
+    
+  }
