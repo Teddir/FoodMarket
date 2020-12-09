@@ -56,17 +56,9 @@
               <li class="nav-item active">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
               </li> <br>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false" style="margin-left:20px;">
-                  Menu
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/burger/">Burgers</a>
-                  <a class="dropdown-item" href="/pizza/">Pizza</a>
-                  <a class="dropdown-item" href="/minuman/">Minuman</a>
-                </div>
-              </li> <br>
+              <li class="nav-item">
+                <a class="nav-link" href="/menu/" style="margin-left:20px;">Menu</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" style="margin-left:20px;">About</a>
               </li>

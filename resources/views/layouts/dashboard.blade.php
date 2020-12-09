@@ -8,7 +8,7 @@
 
 
 @section('body')
-<div class="container-fluid">
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
