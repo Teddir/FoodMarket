@@ -30,6 +30,10 @@ Route::get('/login', function () {
     
     return view('layouts\login');
 });
+Route::get('/menu', function () {
+    
+    return view('layouts\menu');
+});
 
 Auth::routes();
 
