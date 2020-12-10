@@ -60,7 +60,8 @@
                 <a class="nav-link" href="/menu/" style="margin-left:20px;">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style="margin-left:20px;">About</a>
+                <a class="nav-link" href="/about/" style="margin-left:20px;">About</a>
+
               </li>
           </div>
       </div>
