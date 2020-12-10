@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="css/bootstrap.css" rel="stylesheet">
-  <!-- <link href="{{ asset('css/dashboard.css')}}"> -->
+  <link href="{{ asset('css/dashboard.css')}}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -34,12 +34,9 @@
 </head>
 
 <body>
-  <nav style="background-color: #fefefe !important; padding: 0; justify-content: space-between; margin-bottom : -10px"
-    class="navbar navbar-expand-lg">
-    <nav style="display: contents; padding: 0; justify-content: space-between; margin: 0;"
-      class="navbar navbar-expand-lg">
+  <nav style="background-color: #fefefe !important; padding: 0; justify-content: space-between; margin-bottom : -10px; box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 1, 0.025);" class="navbar navbar-expand-lg">
+    <nav style="display: contents; padding: 0; justify-content: space-between; margin: 0;" class="navbar navbar-expand-lg">
       <div style="display: flex; flex-direction: row; margin-inline-end: auto;">
-
         <a style="padding: 0; margin: 0; margin-left: 80px;" class="navbar-brand" href="#">
           <img style=" width: 70px; height: 70px; margin: auto; display: flex; flex-direction: row;"
             src="https://media.discordapp.net/attachments/651415548965421086/768396585121611776/IMG-8527.PNG?width=369&height=369">
