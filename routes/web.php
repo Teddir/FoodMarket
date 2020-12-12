@@ -30,15 +30,9 @@ Route::get('/login', function () {
     
     return view('layouts\login');
 });
-<<<<<<< Updated upstream
 Route::get('/menu', function () {
     
     return view('layouts\menu');
-=======
-Route::get('/about', function () {
-    
-    return view('layouts\about');
->>>>>>> Stashed changes
 });
 
 Auth::routes();
