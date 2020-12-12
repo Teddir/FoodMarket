@@ -34,6 +34,10 @@ Route::get('/menu', function () {
     
     return view('layouts\menu');
 });
+Route::get('/location', function () {
+    
+    return view('layouts\location');
+});
 
 Auth::routes();
 

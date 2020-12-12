@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -62,11 +63,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="/about/" style="margin-left:20px;">About</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/location/" style="margin-left:20px;">Location</a>
+              </li>
           </div>
       </div>
       <div style="width: fit-content; margin-right: 50px;" class="button">
         <a href="/login/">
-          <button id="loginBtn" type="button" class="btn  btn-outline-dark">Login</button>
+          <button id="loginBtn" type="button" class="btn  btn-success">Login</button>
         </a>
 
       </div>
