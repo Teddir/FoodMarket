@@ -2,8 +2,10 @@
     position : absolute;
     width: 370px;
     height: 115px;
-    font-family: Roboto Condensed;
-    font-size: 140px;
+    font-family: Montserrat;
+    font-weight: 1000;
+    font-size: 150px;
+    color : white; 
   }
   .subtitle {
     position : absolute;
@@ -141,4 +143,13 @@ margin-left: 180px;
   animation-duration: 0.25s;
   border-left: 8px solid yellow;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.title:hover {
+  position : absolute;
+  width: 370px;
+  height: 115px;
+  font-family: Montserrat;
+  font-weight: 1000;
+  font-size: 150px;
+  color : black; 
 }

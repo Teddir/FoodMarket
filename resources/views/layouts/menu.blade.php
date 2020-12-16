@@ -26,7 +26,7 @@
       <div class = "container-menu2">
       <div class = "gambar" >
       <img style="zoom : 130%;"src="https://media.discordapp.net/attachments/767045716420853772/768334564275781632/chicken.png">;
-      <div class = "title"style="margin-left: 100px;margin-top : 80px;">
+      <div class = "title"style="margin-left: 60px;margin-top:80px;">
             <p>Burger</p>
         </div>
     
@@ -38,8 +38,8 @@
       <div class = "container-menu3">
       <div class = "gambar2" >
       <img style="zoom : 130%;"src="https://www.dsmenu.com/user-folder/images/0/644/1438219296-644.png">;
-      <div class = "title">
-            <p style="margin-left: 180px;margin-top : 15px;">   Beverage</p>
+      <div class = "title"style="margin-left: 100px;">
+            <p>Beverage</p>
         </div>
 </div>
 </div>
