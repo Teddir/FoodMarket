@@ -42,6 +42,10 @@ Route::get('/about', function () {
     
     return view('layouts\about');
 });
+Route::get('/minuman', function () {
+    
+    return view('layouts\minuman');
+});
 
 Auth::routes();
 

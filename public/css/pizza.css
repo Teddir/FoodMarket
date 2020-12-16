@@ -1,113 +1,60 @@
-.line{
-    position: absolute;
-    width: 1349px;
-    height: 0px;
-    left: 0px;
-    top: 232px;
-    border: 3px solid #000000;
-    }
-    .burgerbig{
-    position: absolute;
-    width: 573px;
-    height: 344px;
-    top : 348px;
-    left : 282px;
-    }
-    .title {
-    position : absolute;
-    width: 356px;
-    height: 56px; 
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    
-    line-height: 56px;
-    top : 476px;
-    left : 800px;    
-    color: #000000;
-        
-    }
-    .subtitle {
-    position: absolute;
-    width: 273px;
-    height: 34px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-    top : 539px;
-    left : 810px;
-    }
-    .garis1{
-    position: absolute;
-    position: absolute;
-    width: 335px;
-    height: 0px;
-    left: 281px;
-    top: 671px;
-    border: 2px solid #000000;
-    }
-    .garis2{
-        position: absolute;
-        width: 335px;
-        height: 0px;
-        left: 847px;
-        top: 671px;
-        border: 2px solid #000000;
-    }
-    .menu {
-    position: absolute;
-    width: 214px;
-    height: 52px;
-    left: 624px;
-    top: 646px;
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: #000000;
-    }        
-        
-    
-    .container-fluid{
-        padding: 0 !important; 
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-            
+.utama{
+  background-color:white;
+}
 
-.container-menu{
-        display: grid;
-        height: 400px;
-        grid-template: center;
-        grid-template-columns: auto auto;
-        grid-gap: 0px;
-        background-color: white;
-        padding: 1px;
+.bigpizza{
+width: 300px;
+height: 330px;
+background-color:orange;
+border-radius: 12px;
+margin-left: auto;
+margin-left: 115px;
+margin-top: 40px;
+margin-bottom: 0px;
+padding-left: 35px;
+padding-right: 35px;
+padding-top: 20px;
+}
 
-      }
-      
-      .container-menu > div {
-        background-color:white;
-        padding: 0;
-      }
-      .text{
-        left: 281px;
-        top: 671px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
+.square{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 
-      }
-      .p{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size:20px;
-      }
+h1{
+  margin-left: 95px;
+  font-family: 'Montserrat', sans-serif;
+}
+.product-title{
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  font-size: 2rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+
+}
+.img-fluid{
+  display: block;
+  margin: auto;
+  max-width: 100%; 
+  height: auto;
+  transition: .1s transform ease-in-out;
+}
+.btn.btn-primary {
+  font-size: 10px;
+  text-align: center;
+  align-content: center;
+  border-radius: 2em;
+  border: 0 !important;
+  color: #000 !important;
+  text-transform: uppercase;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: white !important;
+  display:block;
+  margin: auto;
+}
+

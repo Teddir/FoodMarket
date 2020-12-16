@@ -2,60 +2,55 @@
 
 @section('head')
 <link rel="stylesheet" type="text/css" href="{!! asset('/css/pizza.css') !!}">
-<!-- <link rel="stylesheet" href="{% static 'css/pizza.css' %}" /> -->
-<!-- <link rel="stylesheet" href="{{ URL::asset('css/pizza.css') }}" /> -->
-<!-- <link href="{{ asset('css/pizza.css')}}"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 @endsection
 
 @section('body')
-    
-    <div class="container-fluid">
-        <div class="line"></div>
-        <div class ="burgerbig"></div>
-        <div class = "title"style="margin-left: 15px;">
-            <p>Sanni's Pizza</p>
-        </div>
-        <div class ="subtitle">
-            <p>Get a taste of our delicious pizzas</p> 
-        </div>
-    <div class ="bigburger">
-        <img style="width: 603px;height: 374px; margin-top:250px; margin-left:220px;"
-        src="https://media.discordapp.net/attachments/767045716420853772/770509270097068052/bigpizza.png?width=672&height=452">
-    </div>
-    <div>
-    <div class="garis1" style="margin-top: 50px;"> </div>
-    <div class ="garis2" style="margin-top:50px;"> </div>
-    <div class ="menu"style="margin-top: 50px;">OUR MENU</div></div>
-   
-    <div class ="container-menu" style="margin-top: 80px; margin-left:250px;" >
-    <div>
-        <img style="width: 350px;height: 250px;margin-top :10px"
-        src="https://media.discordapp.net/attachments/767045716420853772/770519948363038730/pizza1.png?width=678&height=452">
-    </div>
-    <div>
-        <img style="width: 350px;height: 250px;margin-top :10px"
-        src="https://media.discordapp.net/attachments/767045716420853772/770519960664539146/pizza2.png?width=678&height=452">
-        
-    </div>
-    <div>
-        <img style="width: 350px;height: 250px;margin-top :40px"
-        src="https://media.discordapp.net/attachments/767045716420853772/770519962522484736/pizza3.png?width=679&height=452">
-    </div>
-    <div>
-        <img style="width: 350px;height: 250px;margin-top :40px"
-        src="https://media.discordapp.net/attachments/767045716420853772/770519966033641483/pizza4.png?width=677&height=452">
-    </div>
-    </div>
-    <div>
-        <div class="garis1" style="margin-top: 800px;">
-        <div class ="menu">Additional Toppings</div></div>
-            <div class="p"><p style="margin-top :90px;text-align:center;">Mozarella Crust<br>Rp.20.000</p></div>
-            <div class="p"><p style="margin-top :115px;text-align:center;">Double Cheddar Cheese<br>Rp.15.000</p></div></div>
-        <div class ="garis2" style="margin-top:800px;"> 
-        <div class="p"><p style="margin-top :90px;text-align:center;">Thin-Crusty<br>Rp.10.000</p></div>
-        <div class="p"><p style="margin-top :115px;text-align:center;">Extra Pepperoni<br>Rp.20.000</p></div>
-    </div>
 
-       
+<div class="utama">
+    <h1>MENU PIZZA</h1>
+    <div class="square">
+        <div class="bigpizza">
+            <img src="https://dom-repo-olo-prod.oss-ap-southeast-5.aliyuncs.com/catalog/product/cache/2/small_image/187x/9df78eab33525d08d6e5fb8d27136e95/u/l/ultimatecheesemeltnew.png" class="img-fluid">
+            <p class="product-title">Ultimate Cheese Melt</p>
+            <p class="product-title">IDR 78K</p>
+            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
+        </div>
+        <div class="bigpizza">
+            <img src="https://dom-repo-olo-prod.oss-ap-southeast-5.aliyuncs.com/catalog/product/cache/2/small_image/187x/9df78eab33525d08d6e5fb8d27136e95/c/h/cheese-mania-550x550px.png" class="img-fluid">
+            <p class="product-title">Cheese Mania</p>
+            <p class="product-title">IDR 45K</p>
+            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
+        </div>
+        <div class="bigpizza">
+            <img src="https://dom-repo-olo-prod.oss-ap-southeast-5.aliyuncs.com/catalog/product/cache/2/small_image/187x/9df78eab33525d08d6e5fb8d27136e95/d/o/double-beef-burger-550x550px.png" class="img-fluid">
+            <p class="product-title">Double Beef Burger</p>
+            <p class="product-title">IDR 41K</p>
+            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
+        </div>
+    </div>
+    <div class="square">
+        <div class="bigpizza">
+            <img src="https://dom-repo-olo-prod.oss-ap-southeast-5.aliyuncs.com/catalog/product/cache/2/small_image/187x/9df78eab33525d08d6e5fb8d27136e95/m/e/meatzza-550x550px.png" class="img-fluid">
+            <p class="product-title">MeatZza</p>
+            <p class="product-title">IDR 40K</p>
+            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
+        </div>
+        <div class="bigpizza">
+            <img src="https://dom-repo-olo-prod.oss-ap-southeast-5.aliyuncs.com/catalog/product/cache/2/small_image/187x/9df78eab33525d08d6e5fb8d27136e95/c/h/chicken-lovers-550x550px.png" class="img-fluid">
+            <p class="product-title">Chicken Lovers</p>
+            <p class="product-title">IDR 35K</p>
+            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
+        </div>
+        <div class="bigpizza">
+            <img src="https://dom-repo-olo-prod.oss-ap-southeast-5.aliyuncs.com/catalog/product/cache/2/small_image/187x/9df78eab33525d08d6e5fb8d27136e95/g/r/grill-beef-supreme-550x550px.png" class="img-fluid">
+            <p class="product-title">Grilled Beef Supreme</p>
+            <p class="product-title">IDR 60K</p>
+            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
+        </div>
+    </div>
 </div>
+
 @endsection

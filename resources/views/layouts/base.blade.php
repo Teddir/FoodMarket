@@ -65,7 +65,7 @@
               </li>
           </div>
       </div>
-      <div style="width: fit-content; margin-right: 50px;" class="button">
+      <div style="width: fit-content; margin-right: 50px; background-color:#AE1800;  font-display: white;" class="button">
         <a href="/login/">
           <button id="loginBtn" type="button" class="btn  btn-success">Login</button>
         </a>
