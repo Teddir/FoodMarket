@@ -2,6 +2,8 @@
 
 @section('head')
 <link rel="stylesheet" type="text/css" href="{!! asset('/css/minuman.css') !!}">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -9,7 +11,12 @@
 
 @section('body')
 
-<div class="utama">
+<div class="container-fluid">
+    <div class="back">
+        <a href="/menu/">
+            <i class="fa fa-arrow-left"> Menu</i>
+        </a>
+    </div>
     <h1>DRINK</h1>
     <div class="square">
         <div class="minuman">

@@ -3,14 +3,21 @@
 @section('head')
 <link rel="stylesheet" type="text/css" href="{!! asset('/css/burger.css') !!}">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 @endsection
 
 @section('body')
 
-<div class="utama">
-    <h1>MENU BURGER</h1>
+<div class="container-fluid">
+    <div class="back">
+        <a href="/menu/">
+            <i class="fa fa-arrow-left"> Menu</i>
+        </a>
+    </div>
+    <h1>BURGER</h1>
     <div class="square">
         <div class="bigburger">
             <img src="https://nos.jkt-1.neo.id/mcdonalds/foods/November2019/0nR6ysDcMRuLttBeJ4Ho.png" class="img-fluid">

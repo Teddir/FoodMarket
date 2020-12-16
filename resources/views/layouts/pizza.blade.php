@@ -3,14 +3,21 @@
 @section('head')
 <link rel="stylesheet" type="text/css" href="{!! asset('/css/pizza.css') !!}">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 @endsection
 
 @section('body')
 
-<div class="utama">
-    <h1>MENU PIZZA</h1>
+<div class="container-fluid">
+    <div class="back">
+        <a href="/menu/">
+            <i class="fa fa-arrow-left"> Menu</i>
+        </a>
+    </div>
+    <h1>PIZZA</h1>
     <div class="square">
         <div class="bigpizza">
             <img src="https://dom-repo-olo-prod.oss-ap-southeast-5.aliyuncs.com/catalog/product/cache/2/small_image/187x/9df78eab33525d08d6e5fb8d27136e95/u/l/ultimatecheesemeltnew.png" class="img-fluid">
