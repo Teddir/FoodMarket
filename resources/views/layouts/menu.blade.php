@@ -2,6 +2,8 @@
 
 @section('head')
 <link rel="stylesheet" type="text/css" href="{!! asset('/css/menu.css') !!}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <!-- <link rel="stylesheet" href="{% static 'css/menu.css' %}" /> -->
 <!-- <link rel="stylesheet" href="{{ URL::asset('css/menu.css') }}" /> -->
 <!-- <link href="{{ asset('css/burger.css')}}"> -->
@@ -9,6 +11,7 @@
 
 @section('body')
 <div class="container-fluid">
+    <p style="width: 14vw; margin: auto; font-size: 35px; font-family: 'Roboto', sans-serif;">OUR MENU</p>
     <div class="row">
         <div class="column">
             <a href="/pizza/">
@@ -34,7 +37,7 @@
                 </div>
         </div>
         <div class="column">
-            <a href="/minuman/">
+            <a href="/drink/">
                 <div class="container-menu3">
                     <div class="gambar2">
                         <img style="zoom : 130%;" src="https://www.dsmenu.com/user-folder/images/0/644/1438219296-644.png">;

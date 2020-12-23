@@ -1,6 +1,6 @@
 .bigpizza{
 width: 300px;
-height: 330px;
+height: 370px;
 background-color:orange;
 border: solid #ff692e;
 border-radius: 12px;
@@ -14,7 +14,7 @@ padding-top: 20px;
 transition: transform .2s;
 }
 .bigpizza:hover {
-  transform: scale(1.050); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.050);
 }
 
 
@@ -74,6 +74,29 @@ h1{
 
 .back h1{
   margin: 0 !important;
+}
+
+.quantity{
+  width: fit-content;
+  margin: auto;
+}
+#min{
+  color: black;
+  border:none;
+  background-color: transparent;
+}
+#min:focus{
+  border: none;
+  outline: none;
+}
+#plus{
+  color: black;
+  border:none;
+  background-color: transparent;
+}
+#plus:focus{
+  border: none;
+  outline: none;
 }
 
 

@@ -1,10 +1,9 @@
-.minuman{
+.drink{
 width: 300px;
-height: 330px;
+height: 350px;
 background-color:orange;
 border: solid #ff692e;
 border-radius: 12px;
-margin-left: auto;
 margin-left: 115px;
 margin-top: 40px;
 margin-bottom: 0px;
@@ -14,8 +13,8 @@ padding-top: 20px;
 transition: transform .2s;
 }
 
-.minuman:hover {
-    transform: scale(1.050); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.drink:hover {
+    transform: scale(1.050);
   }
 
 .square{
@@ -73,5 +72,28 @@ h1{
 
 .back h1{
     margin: 0 !important;
+}
+
+.quantity{
+    width: fit-content;
+    margin: auto;
+}
+#min{
+    color: black;
+    border:none;
+    background-color: transparent;
+}
+#min:focus{
+    border: none;
+    outline: none;
+}
+#plus{
+    color: black;
+    border:none;
+    background-color: transparent;
+}
+#plus:focus{
+    border: none;
+    outline: none;
 }
 

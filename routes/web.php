@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\AuthController;
+// use App\Http\Controllers\MenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,40 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-
-    return view('layouts\dashboard');
-});
-
-Route::get('/pizza', function () {
-    
-    return view('layouts\pizza');
-});
-Route::get('/burger', function () {
-    
-    return view('layouts\burger');
-});
-Route::get('/login', function () {
-    
-    return view('layouts\login');
-});
-Route::get('/menu', function () {
-    
-    return view('layouts\menu');
-});
-Route::get('/location', function () {
-    
-    return view('layouts\location');
-});
-Route::get('/about', function () {
-    
-    return view('layouts\about');
-});
-Route::get('/minuman', function () {
-    
-    return view('layouts\minuman');
-});
-
-Auth::routes();
+Route::get('/', [PagesController::class,'home']);
+Route::get('/pizza', [PagesController::class, 'pizza']);
+Route::get('/burger', [PagesController::class,'burger']);
+Route::get('/drink', [PagesController::class,'drink']);
+Route::get('/about', [PagesController::class,'about']);
+Route::get('/location', [PagesController::class,'location']);
+Route::get('/login', [AuthController::class,'login']);
+Route::post('/login/check', [AuthController::class,'doLogin']);
+Route::get('/register', [AuthController::class,'register']);
+Route::get('/login/success', [AuthController::class,'successlogin']);
+Route::get('/logout', [AuthController::class,'logout']);
+Route::get('/menu', [PagesController::class,'menu']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

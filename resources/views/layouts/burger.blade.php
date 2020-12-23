@@ -19,45 +19,41 @@
     </div>
     <h1>BURGER</h1>
     <div class="square">
+        @foreach($burgers as $burger)
         <div class="bigburger">
-            <img src="https://nos.jkt-1.neo.id/mcdonalds/foods/November2019/0nR6ysDcMRuLttBeJ4Ho.png" class="img-fluid">
-            <p class="product-title">SanSpicy Chicken</p>
-            <p class="product-title">IDR 35K</p>
+            <img src="{{$burger['image']}}" class="img-fluid">
+            <p class="product-title">{{$burger ['jenis_burger']}}</p>
+            <p class="product-title">IDR {{$burger['harga']}}</p>
+            <div class="quantity">
+                <button id="min" type="button" class="glyphicon glyphicon-minus" onclick="hitung('-', {{$burger['id']}})"></button>
+                <input style="width: 35px; border:none;text-align: center; margin-bottom:10px;" value="0" id="{{$burger['id']}}" />
+                <button id="plus" type="button" class="glyphicon glyphicon-plus" onclick="hitung('+', {{$burger['id']}})"></button>
+            </div>
             <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
         </div>
-        <div class="bigburger">
-            <img src="https://nos.jkt-1.neo.id/mcdonalds/foods/August2020/8d2xhfpKHuHnJANcaMZ7.png" class="img-fluid">
-            <p class="product-title">SanChicken</p>
-            <p class="product-title">IDR 30K</p>
-            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
-        </div>
-        <div class="bigburger">
-            <img src="https://nos.jkt-1.neo.id/mcdonalds/foods/October2019/BFcnGCUwrw4CxkxDkahi.png" class="img-fluid">
-            <p class="product-title">SanFish</p>
-            <p class="product-title">IDR 32K</p>
-            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
-        </div>
-    </div>
-    <div class="square">
-        <div class="bigburger">
-            <img src="https://nos.jkt-1.neo.id/mcdonalds/foods/October2019/AfYw3Cwp5YqZ7wOP9aQu.png" class="img-fluid">
-            <p class="product-title">Triple CheeseBurger</p>
-            <p class="product-title">IDR 40K</p>
-            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
-        </div>
-        <div class="bigburger">
-            <img src="https://nos.jkt-1.neo.id/mcdonalds/foods/October2019/apZ1DxDmKvwS2lV12Elp.png" class="img-fluid">
-            <p class="product-title">Double CheeeseBurger</p>
-            <p class="product-title">IDR 35K</p>
-            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
-        </div>
-        <div class="bigburger">
-            <img src="https://nos.jkt-1.neo.id/mcdonalds/foods/August2020/NUfkX3XBlwCVguapu681.png" class="img-fluid">
-            <p class="product-title">Burger Deluxe</p>
-            <p class="product-title">IDR 30K</p>
-            <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
-        </div>
+        @endforeach
     </div>
 </div>
-
+@endsection
+@section('jscript')
+<script language="JavaScript">
+    function hitung(operasi,id) {
+        id = id.toString();   
+        bil1 = document.getElementById(id).value;
+        if (operasi == "+") {
+            bil1 = parseInt(bil1);
+            hasil = bil1 + 1;
+            input = document.getElementById(id);
+            input.value = hasil;
+        }
+        if (operasi == "-") {
+            bil1 = parseInt(bil1);
+            if (bil1 > 0) {
+                hasil = bil1 - 1;
+                input = document.getElementById(id);
+                input.value = hasil;
+            }
+        }
+    }
+</script>
 @endsection

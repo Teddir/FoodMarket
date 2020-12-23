@@ -1,10 +1,10 @@
 @extends('layouts/base')
 
 @section('head')
-<link rel="stylesheet" type="text/css" href="{!! asset('/css/pizza.css') !!}">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="{!! asset('/css/drink.css') !!}">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 @endsection
@@ -17,17 +17,17 @@
             <i class="fa fa-arrow-left"> Menu</i>
         </a>
     </div>
-    <h1>PIZZA</h1>
+    <h1>DRINK</h1>
     <div class="square">
-        @foreach($pizzas as $pizza)
-        <div class="bigpizza">
-            <img src="{{$pizza['image']}}" class="img-fluid">
-            <p class="product-title">{{$pizza['jenis_pizza']}}</p>
-            <p class="product-title">IDR {{$pizza['harga']}}</p>
+        @foreach($drinks as $drink)
+        <div class="drink">
+            <img src="{{$drink['image']}}" class="img-fluid">
+            <p class="product-title">{{$drink['jenis_minuman']}}</p>
+            <p class="product-title">IDR {{$drink['harga']}}</p>
             <div class="quantity">
-                <button id="min" type="button" class="glyphicon glyphicon-minus" onclick="hitung('-', {{$pizza['id']}})"></button>
-                <input style="width: 35px; border:none;text-align: center; margin-bottom:10px;" value="0" id="{{$pizza['id']}}" />
-                <button id="plus" type="button" class="glyphicon glyphicon-plus" onclick="hitung('+', {{$pizza['id']}})"></button>
+                <button id="min" type="button" class="glyphicon glyphicon-minus" onclick="hitung('-', {{$drink['id']}})"></button>
+                <input style="width: 35px; border:none;text-align: center; margin-bottom:10px;" value="0" id="{{$drink['id']}}" />
+                <button id="plus" type="button" class="glyphicon glyphicon-plus" onclick="hitung('+',{{$drink['id']}})"></button>
             </div>
             <button id="ProductBtn" type="button" class="btn btn-primary">Order Now</button>
         </div>
@@ -36,10 +36,11 @@
 </div>
 
 @endsection
+
 @section('jscript')
 <script language="JavaScript">
     function hitung(operasi, id) {
-        id = id.toString();   
+        id = id.toString();
         bil1 = document.getElementById(id).value;
         if (operasi == "+") {
             bil1 = parseInt(bil1);
@@ -55,6 +56,7 @@
                 input.value = hasil;
             }
         }
+
     }
 </script>
 @endsection

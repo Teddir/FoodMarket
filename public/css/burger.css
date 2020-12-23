@@ -1,6 +1,6 @@
 .bigburger{
 width: 300px;
-height: 330px;
+height: 350px;
 background-color:orange;
 border-radius: 12px;
 margin-left: auto;
@@ -15,7 +15,7 @@ border: solid #ff692e;
 }
 
 .bigburger:hover {
-    transform: scale(1.050); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.050); 
   }
 
 .square{
@@ -43,6 +43,7 @@ h1{
     display: block;
     max-width: 100%; 
     height: auto;
+    transition: .1s transform ease-in-out;
 }
 .btn.btn-primary {
     font-size: 10px;
@@ -74,6 +75,29 @@ h1{
 
 .back h1{
     margin: 0 !important;
+}
+
+.quantity{
+    width: fit-content;
+    margin: auto;
+}
+#min{
+    color: black;
+    border:none;
+    background-color: transparent;
+}
+#min:focus{
+    border: none;
+    outline: none;
+}
+#plus{
+    color: black;
+    border:none;
+    background-color: transparent;
+}
+#plus:focus{
+    border: none;
+    outline: none;
 }
 
 

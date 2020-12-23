@@ -14,22 +14,40 @@
             <h3 style="font-family: roboto; font-weight: 1000; width: fit-content; margin: auto; margin-top: 20px; font-size: 25px;">LOGIN</h3>
         </div>
         <div class="input" style="border-radius: 25px">
-            <form>
+            @if ($message = Session::get('error'))
+            <div class="alert alert-danger alert-block">
+                <button type="button" class="close" data-dismiss="alert">x</button>
+                <strong>{{$message}}</strong>
+            </div>
+            @endif
+
+            @if(count($errors) > 0)
+                <div>
+                    <ul>
+                    @foreach($errors-> all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form method="POST" action="{{ url('/login/check')}}">
+                {{ csrf_field() }}
                 <div class="isian">
-                    <input class="baris1" type="text" placeholder="Username or Email" style="border-radius: 25px">
-                    <input class="baris1" type="password" placeholder="Password" style="border-radius: 25px">
+                    <input name="email" class="baris1" type="text" placeholder="Username or Email" style="border-radius: 25px">
+                    <input name="password" class="baris1" type="password" placeholder="Password" style="border-radius: 25px">
                 </div>
                 <div class="signup">
-                    <button class="bt_signup"> Login </button>
+                    <button type="submit" name="login" class="bt_signup" value="login"> Login </button>
                 </div>
                 <div class="register">
                     <p> Don't have an account? </p>
                     <a href="/register/">
                         <p style="margin-left: 5px; color: rgb(35, 120, 233);"> Register</p>
                     </a>
-                </div>
+                    </div>
             </form>
         </div>
-    </div>
+        </div>
 </div>
 @endsection
