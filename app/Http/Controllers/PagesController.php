@@ -30,4 +30,7 @@ class PagesController extends Controller
     public function location(){
         return view ('layouts/location');
     }
+    public function profile(){
+        return view ('layouts/profile');
+    }
 }

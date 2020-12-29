@@ -23,6 +23,8 @@ Route::get('/burger', [PagesController::class,'burger']);
 Route::get('/drink', [PagesController::class,'drink']);
 Route::get('/about', [PagesController::class,'about']);
 Route::get('/location', [PagesController::class,'location']);
+Route::get('/profile', [PagesController::class,'profile']);
+
 
 Route::get('/register', [AuthController::class,'register']);
 Route::post('/register/check', [AuthController::class,'doRegister']);

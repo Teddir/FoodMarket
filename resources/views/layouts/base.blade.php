@@ -62,9 +62,10 @@
               </li>
           </div>
       </div>
-      <div style="width: fit-content; margin-right: 50px; background-color:#AE1800;  font-display: white;" class="button">
+      <div style="width: fit-content; margin-right: 50px; background-color:#FFFFFF;  font-display: white;" class="button">
       @if(isset(Auth::user()->email))
-        <strong>{{Auth::user()->email}}</strong>
+
+     <strong style="margin-right:15px;">Welcome,<a href="/profile/"> {{Auth::user()->name}}</a></strong>
         <a href="/logout/">
         <button id="loginBtn" type="button" class="btn  btn-success">Logout</button>
         </a>
