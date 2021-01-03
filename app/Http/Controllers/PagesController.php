@@ -24,6 +24,9 @@ class PagesController extends Controller
         $drink = \App\Models\Drink::all();
         return view ('layouts/drink',['drinks' => $drink]);
     }
+    public function cart(){
+        return view ('layouts/cart');
+    }
     public function about(){
         return view ('layouts/about');
     }

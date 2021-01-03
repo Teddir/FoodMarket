@@ -25,6 +25,8 @@ Route::get('/about', [PagesController::class,'about']);
 Route::get('/location', [PagesController::class,'location']);
 Route::get('/profile', [PagesController::class,'profile']);
 
+// Route::get('/cart', [PagesController::class,'cart']);
+
 
 Route::get('/register', [AuthController::class,'register']);
 Route::post('/register/check', [AuthController::class,'doRegister']);
@@ -35,6 +37,9 @@ Route::get('/login/success', [AuthController::class,'successlogin']);
 Route::get('/logout', [AuthController::class,'logout']);
 
 
-// Route::get('register','AuthController@getRegister');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/cart', [App\Http\Controllers\CartControllerController::class, 'index']);
+
+

@@ -24,6 +24,7 @@
   <style>
     a {
       color: black;
+      font-weight: 700;
     }
 
     #navbarSupportedContent a:hover {
@@ -69,11 +70,11 @@
         <a href="/logout/">
         <button id="loginBtn" type="button" class="btn  btn-success">Logout</button>
         </a>
-      @else{
+      @else
         <a href="/login/">
         <button id="loginBtn" type="button" class="btn  btn-success">Login</button>
       </a>
-      }
+
       @endif
       
       </div>
