@@ -62,7 +62,7 @@
             </tr>
             <tr>
                 <td colspan="2" class="hidden-xs"></td>
-                <td class="hidden-xs text-center"><strong>Total {{number_format($item->subtotal)}}</strong></td>
+                <td class="hidden-xs text-center"><strong>Total {{number_format($subtotal)}}</strong></td>
             </tr>
         </tfoot>
     </table>

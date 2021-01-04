@@ -47,6 +47,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/cart', [App\Http\Controllers\CartController::class,'create']);
-Route::post('/cart_create/{id}', [App\Http\Controllers\CartController::class,'store']);
+Route::post('/cart_create_burger/{id}', [App\Http\Controllers\CartController::class,'burger']);
+Route::post('/cart_create_pizza/{id}', [App\Http\Controllers\CartController::class,'pizza']);
+Route::post('/cart_create_drink/{id}', [App\Http\Controllers\CartController::class,'drink']);
 Route::get('/cart_delete/{id}', [App\Http\Controllers\CartController::class,'destroy']);
 

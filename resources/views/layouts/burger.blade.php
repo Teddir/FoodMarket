@@ -25,7 +25,7 @@
             <p class="product-title">{{$burger ['jenis_burger']}}</p>
             <p class="product-title">IDR {{$burger['harga']}}</p>
             <div class="quantity">
-                <form action="/cart_create/{{$burger['id']}}" method="post">@csrf 
+                <form action="/cart_create_burger/{{$burger['id']}}" method="post">@csrf 
                 <button id="min" type="button" class="glyphicon glyphicon-minus" onclick="hitung('-', {{$burger['id']}})" value=""></button>
                 
                 <label for="quantity">

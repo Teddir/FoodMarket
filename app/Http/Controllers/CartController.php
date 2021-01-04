@@ -14,55 +14,71 @@ class CartController extends Controller
     public function create()
     {
         $cart = Cart::all();
-        return view ('layouts/cart', ['carts' => $cart]);
+        $subtotal = Cart::sum('subtotal');
+        return view('layouts/cart', ['carts' => $cart, 'subtotal' => $subtotal]);
     }
 
-    public function store(Request $request, $id)
+    public function burger(Request $request, $id)
     {
         $request->validate([]);
-        
+
         $burger = Burger::find($id);
-        $pizza = Pizza::find($id);
-        $drink = Drink::find($id);
 
         $cart = new Cart;
-        if ($cart->jenis_makananMinuman = $burger->jenis_burger) {
-            # code...
-            $cart->jenis_makananMinuman = $burger->jenis_burger;
-            $cart->quantity = $request->quantity;
-            $cart->harga = $burger->harga;        
-            $cart->image = $burger->image;
-            $cart->total = $cart->harga * $cart->quantity;
-            $cart->subtotal = $cart->total + $cart->total;
-            $cart->save();
+        # code...
+        $cart->jenis_makananMinuman = $burger->jenis_burger;
+        $cart->quantity = $request->quantity;
+        $cart->harga = $burger->harga;
+        $cart->image = $burger->image;
+        $cart->total = $cart->harga * $cart->quantity;
+        $cart->subtotal = $cart->total + $cart->total;
+        $cart->save();
 
-
-        } else if ($cart->jenis_makananMinuman = $pizza->jenis_pizza) {
-            # code...
-            $cart->jenis_makananMinuman = $pizza->jenis_pizza;
-            $cart->quantity = $request->quantity;
-            $cart->harga = $pizza->harga;        
-            $cart->image = $pizza->image;
-            $cart->total = $cart->harga * $cart->quantity;
-            $cart->subtotal = $cart->total + $cart->total;
-            $cart->save();
-
-        } else if ($cart->jenis_makananMinuman = $drink->jenis_drink) {
-            # code...
-            $cart->jenis_makananMinuman = $drink->jenis_drink;
-            $cart->quantity = $request->quantity;
-            $cart->harga = $drink->harga;        
-            $cart->image = $drink->image;
-            $cart->total = $cart->harga * $cart->quantity;
-            $cart->subtotal = $cart->total + $cart->total;
-            $cart->save();
-        }
-
-
-        // dd($subtotal);
         return redirect('/cart')->with(['success', 'Berhasil Ditambah Ke Keranjang']);
 
     }
+
+    public function pizza(Request $request, $id)
+    {
+        $request->validate([]);
+
+        $pizza = Pizza::find($id);
+
+        $cart = new Cart;
+        # code...
+        $cart->jenis_makananMinuman = $pizza->jenis_pizza;
+        $cart->quantity = $request->quantity;
+        $cart->harga = $pizza->harga;
+        $cart->image = $pizza->image;
+        $cart->total = $cart->harga * $cart->quantity;
+        $cart->subtotal = $cart->total + $cart->total;
+        $cart->save();
+
+        return redirect('/cart')->with(['success', 'Berhasil Ditambah Ke Keranjang']);
+
+    }
+
+    public function drink(Request $request, $id)
+    {
+        $request->validate([]);
+
+        $drink = Drink::find($id);
+
+        $cart = new Cart;
+        # code...
+        $cart->jenis_makananMinuman = $drink->jenis_minuman;
+        $cart->quantity = $request->quantity;
+        $cart->harga = $drink->harga;
+        $cart->image = $drink->image;
+        $cart->total = $cart->harga * $cart->quantity;
+        $cart->subtotal = $cart->total + $cart->total;
+        $cart->save();
+
+        return redirect('/cart')->with(['success', 'Berhasil Ditambah Ke Keranjang']);
+
+    }
+
+
 
     public function destroy($id)
     {
