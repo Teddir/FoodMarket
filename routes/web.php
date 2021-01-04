@@ -40,6 +40,13 @@ Route::get('/logout', [AuthController::class,'logout']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/cart', [App\Http\Controllers\CartControllerController::class, 'index']);
+// Route::get('/cart', [App\Http\Controllers\CartControllerController::class, 'index']);
 
+
+// Route::get('/cart', [App\Http\Controllers\CartController::class,'index']);
+
+
+Route::get('/cart', [App\Http\Controllers\CartController::class,'create']);
+Route::post('/cart_create/{id}', [App\Http\Controllers\CartController::class,'store']);
+Route::get('/cart_delete/{id}', [App\Http\Controllers\CartController::class,'destroy']);
 

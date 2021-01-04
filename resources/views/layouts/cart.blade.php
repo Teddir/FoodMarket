@@ -23,6 +23,7 @@
     </div>
     <h1>Shopping Cart</h1>
     <table id="cart" class="table table-hover table-condensed">
+        
         <thead>
             <tr>
                 <th style="width:50%">Product</th>
@@ -32,35 +33,36 @@
                 <th style="width:10%"></th>
             </tr>
         </thead>
+        @foreach ($carts as $item)
         <tbody>
             <tr>
                 <td data-th="Product">
                     <div class="row">
-                        <div class="col-sm-3 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive" /></div>
+                        <div class="col-sm-3 hidden-xs"><img src="{{$item->image}}" alt="..." class="img-responsive" /></div>
                         <div class="col-sm-9">
-                            <h4 class="nomargin">Product 1</h4>
-                            <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                            <h4 class="nomargin">{{$item->jenis_makananMinuman}}</h4>
+                            {{-- <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p> --}}
                         </div>
                     </div>
                 </td>
-                <td data-th="Price">$1.99</td>
+                <td data-th="Price">{{number_format($item->harga)}}</td>
                 <td data-th="Quantity">
-                    <input type="number" class="form-control text-center" value="1">
+                    <input type="number" class="form-control text-center" value="{{$item->quantity}}">
                 </td>
-                <td data-th="Subtotal" class="text-center">1.99</td>
+                <td data-th="Subtotal" class="text-center">{{number_format($item->total)}}</td>
                 <td class="actions" data-th="">
-                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                    <a href="/cart_delete/{{$item->id}}"><button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>Delete</button></a>
                 </td>
             </tr>
         </tbody>
+        @endforeach
         <tfoot>
             <tr class="visible-xs">
                 <td class="text-center"><strong>Total 1.99</strong></td>
             </tr>
             <tr>
                 <td colspan="2" class="hidden-xs"></td>
-                <td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+                <td class="hidden-xs text-center"><strong>Total {{number_format($item->subtotal)}}</strong></td>
             </tr>
         </tfoot>
     </table>

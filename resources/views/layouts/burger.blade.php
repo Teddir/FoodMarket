@@ -25,11 +25,16 @@
             <p class="product-title">{{$burger ['jenis_burger']}}</p>
             <p class="product-title">IDR {{$burger['harga']}}</p>
             <div class="quantity">
-                <button id="min" type="button" class="glyphicon glyphicon-minus" onclick="hitung('-', {{$burger['id']}})"></button>
-                <input style="width: 35px; border:none;text-align: center; margin-bottom:10px;" value="0" id="{{$burger['id']}}" />
-                <button id="plus" type="button" class="glyphicon glyphicon-plus" onclick="hitung('+', {{$burger['id']}})"></button>
-            </div>
-            <a href="/cart/" id="ProductBtn" type="button" class="btn btn-primary">Order Now</a>
+                <form action="/cart_create/{{$burger['id']}}" method="post">@csrf 
+                <button id="min" type="button" class="glyphicon glyphicon-minus" onclick="hitung('-', {{$burger['id']}})" value=""></button>
+                
+                <label for="quantity">
+                    <input style="width: 35px; border:none;text-align: center; margin-bottom:10px;" name="quantity" value="1" id="{{$burger['id']}}" />
+                </label>
+                    <button id="plus" type="button" class="glyphicon glyphicon-plus" onclick="hitung('+', {{$burger['id']}})" value="{{$burger['id']}}"></button>
+                </div>
+                <a id="ProductBtn" type="submit" class="btn btn-primary"><button type="submit" class="btn light"> Order Now </button></a>
+            </form>
         </div>
         @endforeach
     </div>
