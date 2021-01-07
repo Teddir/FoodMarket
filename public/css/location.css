@@ -1,0 +1,59 @@
+.title {
+    position : absolute;
+    font-family: Montserrat;
+    font-weight: 1000;
+    font-size: 80px;
+    color :red; 
+    margin-left : 450px;
+  }
+  .subtitle {
+    position : absolute;
+    font-family: Montserrat;
+    font-weight: 100;
+    font-size: 30px;
+    color : black; 
+  }
+  .map-container{
+    background-color:yellow;
+    height: 80%; 
+    width :80%;
+    border-width: 3cm;
+    border-radius: 30px;
+    background-position: relative;
+    overflow:hidden;
+    padding-bottom:10%;
+    position:relative;
+    height:0;
+    margin-top : 100px;
+    margin-left :150px;
+    }
+    .profile-container{
+      background-color:yellow;
+      height: 80%; 
+      width :60%;
+      border-width: 3cm;
+      border-radius: 30px;
+      background-position: relative;
+      overflow:hidden;
+      padding-bottom:10%;
+      position:relative;
+      height:0;
+      margin-top : 120px;
+      margin-left :280px;
+      }
+    .iframe{
+    height:70%;
+    width:70%;
+    position:center;
+    }
+    .map-container:hover{
+    border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid red;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.field{
+  margin-left : 210px;
+}

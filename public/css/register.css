@@ -1,0 +1,104 @@
+.register{
+    width: 380px;
+    height: 460px;
+    margin-left: 885px;
+    margin-top: 55px;
+
+}
+.sanni{
+    width: 150px;
+    height: 50px;
+    font-family: 'Satisfy', cursive; 
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+}
+
+.logoimg{
+    width: 90px;
+    margin: auto;
+}
+
+h2{
+    padding:0;
+    margin-top: 15px;
+}
+
+.create{
+    width: 137px;
+    margin: auto;
+
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    width: 138px;
+    margin: auto;
+    font-weight: 700;
+}
+
+.input{
+    width: 100%;
+    height: 88%;
+    margin-bottom: 8px;
+    border-radius: 25px;
+    border: none; 
+    display: flex;
+    flex-direction: column;
+}
+.baris1{
+    background-color:lightgrey;
+    width: 250px;
+    height: 50px;
+    border: none;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    
+}
+.isian{
+    width: 255px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    border-radius: 25px;
+}
+.signup{
+   width: 130px;
+   height: 26px; 
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.bt_signup{
+    width: 120px;
+    height: 26px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(35, 120, 233);
+    color: white;
+}
+.container-fluid{
+    padding : 0;
+    margin :0;
+    height: 88vh; 
+    width :100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-image:url("https://img.techpowerup.org/201027/welcome-back.png");
+    
+}
+.input{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none; 
+    display: flex;
+    flex-direction: column;
+}
