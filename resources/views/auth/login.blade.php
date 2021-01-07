@@ -1,4 +1,4 @@
-@extends('layouts\base')
+@extends('layouts.base')
 
 @section('head')
 <link rel="stylesheet" type="text/css" href="{!! asset('/css/login.css') !!}">

@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AuthController;
 // use App\Http\Controllers\MenuController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,3 +51,4 @@ Route::post('/cart_create_pizza/{id}', [App\Http\Controllers\CartController::cla
 Route::post('/cart_create_drink/{id}', [App\Http\Controllers\CartController::class,'drink']);
 Route::get('/cart_delete/{id}', [App\Http\Controllers\CartController::class,'destroy']);
 
+Route::post('/chekout', [App\Http\Controllers\ChekoutController::class,'store']);

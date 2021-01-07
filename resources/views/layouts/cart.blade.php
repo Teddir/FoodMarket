@@ -63,6 +63,16 @@
             <tr>
                 <td colspan="2" class="hidden-xs"></td>
                 <td class="hidden-xs text-center"><strong>Total {{number_format($subtotal)}}</strong></td>
+                <form action="/chekout" method="post">@csrf
+
+                    <td class="actions" data-th="">
+                        <button class="btn btn-danger btn-sm"></i>Chekout</button>
+                    </td>
+
+                </form>
+            </tr>
+            <tr>
+                
             </tr>
         </tfoot>
     </table>

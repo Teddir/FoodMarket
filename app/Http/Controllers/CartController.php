@@ -13,8 +13,9 @@ class CartController extends Controller
     //
     public function create()
     {
-        $cart = Cart::all();
-        $subtotal = Cart::sum('subtotal');
+        $cart = Cart::where('user_id', auth()->user()->id)->where('status', null)->get();
+        $subtotal = Cart::where('user_id', auth()->user()->id)->where('status', null)->sum('subtotal');
+        dd($subtotal);
         return view('layouts/cart', ['carts' => $cart, 'subtotal' => $subtotal]);
     }
 
@@ -26,6 +27,7 @@ class CartController extends Controller
 
         $cart = new Cart;
         # code...
+        $cart->user_id = auth()->user()->id;
         $cart->jenis_makananMinuman = $burger->jenis_burger;
         $cart->quantity = $request->quantity;
         $cart->harga = $burger->harga;
@@ -46,6 +48,7 @@ class CartController extends Controller
 
         $cart = new Cart;
         # code...
+        $cart->user_id = auth()->user()->id;
         $cart->jenis_makananMinuman = $pizza->jenis_pizza;
         $cart->quantity = $request->quantity;
         $cart->harga = $pizza->harga;
@@ -66,6 +69,7 @@ class CartController extends Controller
 
         $cart = new Cart;
         # code...
+        $cart->user_id = auth()->user()->id;
         $cart->jenis_makananMinuman = $drink->jenis_minuman;
         $cart->quantity = $request->quantity;
         $cart->harga = $drink->harga;

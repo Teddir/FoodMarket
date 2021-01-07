@@ -5,18 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Cart extends Model
+class chekout extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'jenis_makananMinuman',
+        'name',
+        'jumlah_pesanan',
         'quantity',
-        'harga',
-        'total',
         'subtotal',
         'status',
-        'image',
         'user_id',
     ];
 }

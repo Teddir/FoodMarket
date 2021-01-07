@@ -11,6 +11,16 @@
 
 @section('body')
 <div class="container-fluid">
+    {{-- @if(\Session::has('alert-failed'))
+    <div class="alert alert-failed">
+        <div>{{Session::get('alert-failed')}}</div>
+    </div>
+    @endif
+    @if(\Session::has('alert-success'))
+    <div class="alert alert-success">
+        <div>{{Session::get('alert-success')}}</div>
+    </div>
+    @endif --}}
     <p style="width: 14vw; margin: auto; font-size: 35px; font-family: 'Roboto', sans-serif;">OUR MENU</p>
     <div class="row">
         <div class="column">
